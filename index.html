@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
     <style>
       html,
       body {
@@ -13,13 +15,42 @@
         background-image: url(https://ellisonleao.github.io/clumsy-bird/data/img/bg.png);
         background-repeat: no-repeat;
         background-size: cover;
+        overflow: hidden;
       }
-      canvas {
-        border: solid 1px black;
+      
+      .container {
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
+
+      .modal {
+        text-align: center;
+        font-family: 'Press Start 2P', cursive;
+        color: #fff;
+      }
+
+      .score {
+        display:none;
+      }
+
+
     </style>
   </head>
   <body>
+
+    <div class="container">
+      <div class="modal">
+        <h1>PRESS START TO BEGIN</h1>
+        <p class="score">SCORE: </p>
+      </div>
+    </div>
+
     <canvas id="canvas"></canvas>
 
     <script src="./index.js"></script>
