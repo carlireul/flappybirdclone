@@ -170,9 +170,3 @@ addEventListener("keydown", (event) => {
     init();
   }
 });
-
-// TODO
-// resize objects based on window height
-// better graphics.....
-// bird rotation
-// sfx?
