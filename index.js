@@ -172,6 +172,7 @@ addEventListener("keydown", (event) => {
 });
 
 // TODO
-// pipe height as percentage of window height
-// sfx?
+// resize objects based on window height
 // better graphics.....
+// bird rotation
+// sfx?
